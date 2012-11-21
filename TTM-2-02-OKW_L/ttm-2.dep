@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>1019843646</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\Debug\Obj\lcd__.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd__.r43</file>
+      <file>$TOOLKIT_DIR$\config\multiplier32_loc2.xcl</file>
+      <file>$PROJ_DIR$\Debug\Obj\interrupts__.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\memf.r43</file>
+      <file>$PROJ_DIR$\ini.c</file>
+      <file>$PROJ_DIR$\interrupts__.c</file>
+      <file>$PROJ_DIR$\lcd__.c</file>
+      <file>$PROJ_DIR$\lcd_main.c</file>
+      <file>$PROJ_DIR$\printf.c</file>
+      <file>$PROJ_DIR$\usb_descriptors.c</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\memf.c</file>
+      <file>$PROJ_DIR$\eevar_initial__.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\ini.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\clib\sysmac.h</file>
+      <file>$TOOLKIT_DIR$\lib\clib\cl430xmf.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r43</file>
+      <file>$PROJ_DIR$\lnk430F5529_ttm2_okw.xcl</file>
+      <file>$PROJ_DIR$\Debug\Obj\calculation__.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\ini__.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\ini.r43</file>
+      <file>$PROJ_DIR$\ini__.c</file>
+      <file>$PROJ_DIR$\interrupts.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\global_var.r43</file>
+      <file>$PROJ_DIR$\define.h</file>
+      <file>$PROJ_DIR$\global_var.c</file>
+      <file>$TOOLKIT_DIR$\inc\clib\limits.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\msp430f5529.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\eevar_initial__.r43</file>
+      <file>Y:\Programs\Service\MSP430\icclbutl.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\usb_descriptors.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\printf.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\printf.r43</file>
+      <file>Y:\Programs\Service\ARM\LPC\usb_desc.h</file>
+      <file>$TOOLKIT_DIR$\inc\clib\stdarg.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\usb_msp.r43</file>
+      <file>$PROJ_DIR$\Debug\Exe\ttm-2.txt</file>
+      <file>$PROJ_DIR$\Debug\Obj\usb_descriptors.r43</file>
+      <file>$TOOLKIT_DIR$\inc\clib\math.h</file>
+      <file>$PROJ_DIR$\Debug\Exe\ttm-2.d43</file>
+      <file>Y:\Programs\Service\MSP430\msp430_comm.h</file>
+      <file>$TOOLKIT_DIR$\inc\msp430.h</file>
+      <file>$PROJ_DIR$\Debug\List\ttm-2.map</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\inc\clib\stdlib.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\prog.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\interrupts__.pbi</file>
+      <file>$PROJ_DIR$\usb_msp.c</file>
+      <file>$PROJ_DIR$\prog.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\global_var.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\memf.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\clib\stdio.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\ini__.r43</file>
+      <file>$PROJ_DIR$\statistic_main.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\interrupts.r43</file>
+      <file>$PROJ_DIR$\Debug\Exe\ttm-2.ulp</file>
+      <file>$PROJ_DIR$\Debug\Obj\usb_msp.pbi</file>
+      <file>Y:\Programs\Service\MSP430\sd.h</file>
+      <file>$PROJ_DIR$\&lt;invalid loc&gt;</file>
+      <file>$PROJ_DIR$\usb_msp.h</file>
+      <file>Y:\Programs\Service\ARM\LPC\hid.h</file>
+      <file>$PROJ_DIR$\calculation__.c</file>
+      <file>$TOOLKIT_DIR$\inc\in430.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\statistic_main.pbi</file>
+      <file>Y:\Programs\Service\MSP430\short_types.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_main.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd_main.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\prog.r43</file>
+      <file>$PROJ_DIR$\global_declaration.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\interrupts.pbi</file>
+      <file>$PROJ_DIR$\msp430_comm.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\ttm-2.pbd</file>
+      <file>$PROJ_DIR$\Debug\Obj\eevar_initial__.pbi</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\ini.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 21</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 25 43 29 64 45 72 66 35 62 61 59 27 15 40 53 36 46 31 70</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25 43 29 64 45 72 66 35 62 61 59 27 15 40 53 36 46 31 70</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\interrupts__.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 3</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 48</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 60</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\lcd__.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 1</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 0</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 60</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\lcd_main.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 67</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 68</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 25 43 29 64 45 72 66 35 62 61 59 27 15 40 53 36 46 31 70</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25 43 29 64 45 72 66 35 62 61 59 27 15 40 53 36 46 31 70</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\printf.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 34</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 33</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 25 43 29 64 45 72 66 35 62 61 59 27 15 40 53 36 46 31 70</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25 43 29 64 45 72 66 35 62 61 59 27 15 40 53 36 46 31 70</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\usb_descriptors.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 39</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 32</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 25 43 29 64 45 42 66 35 62 61 59 27 15 40 53 36 46 31 70</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25 43 29 64 45 72 66 35 62 61 59 27 15 40 53 36 46 31 70</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 28</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 25 43 29 64 45 72 66 35 62 61 59 27 15 40 53 36 46 31 70</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25 43 29 64 45 72 66 35 62 61 59 27 15 40 53 36 46 31 70</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\memf.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 4</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 52</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 25 43 29 64 45 42 66 35 62 61 59 27 15 40 53 36 46 31 70</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25 43 29 64 45 72 66 35 62 61 59 27 15 40 53 36 46 31 70</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\eevar_initial__.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 30</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 74</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 60</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\ini__.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 54</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 60</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\interrupts.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 56</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 71</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 25 43 29 64 45 42 66 35 62 61 59 27 15 40 53 36 46 31 70</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25 43 29 64 45 72 66 35 62 61 59 27 15 40 53 36 46 31 70</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 41 44</file>
+        </tool>
+        <tool>
+          <name>ULP430</name>
+          <file> 57</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\global_var.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 24</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 25 43 29 64 45 42 66 35 62 61 59 27 15 40 53 36 46 31 70</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25 43 29 64 45 72 66 35 62 61 59 27 15 40 53 36 46 31 70</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\ttm-2.txt</name>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 18 2 24 21 56 17 4 34 69 39 37 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\ttm-2.d43</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 44</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 18 2 24 21 56 67 17 4 34 69 39 37 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\usb_msp.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 37</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 58</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 25 43 29 64 45 42 66 35 62 61 59 27 15 40 53 36 46 31 70</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25 43 29 64 45 72 66 35 62 61 59 27 15 40 53 36 46 31 70</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\prog.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 69</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 47</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 25 43 29 64 45 42 66 35 62 61 59 27 15 40 53 36 46 31 70</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25 43 29 64 45 72 66 35 62 61 59 27 15 40 53 36 46 31 70</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\statistic_main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 65</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 25 43 29 64 45 72 66 35 62 61 59 27 15 40 53 36 46 31 70</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25 43 29 64 45 72 66 35 62 61 59 27 15 40 53 36 46 31 70</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\calculation__.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 19</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 25 43 29 64 45 72 66 35 62 61 59 27 15 40 53 36 46 31 70</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25 43 29 64 45 72 66 35 62 61 59 27 15 40 53 36 46 31 70</file>
+        </tool>
+      </inputs>
+    </file>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\interrupts__.c</name>
+      <tool>ICC430</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\lcd__.c</name>
+      <tool>ICC430</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\eevar_initial__.c</name>
+      <tool>ICC430</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\ini__.c</name>
+      <tool>ICC430</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\statistic_main.c</name>
+      <tool>ICC430</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\calculation__.c</name>
+      <tool>ICC430</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+
