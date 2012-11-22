@@ -3,17 +3,21 @@
 void Prog_LCD_load_data(void)
 {
     // индикация подключения USB и SD
-    if(USBFlags.UsbConfigured)  LIGHT_USB;
-    if(SD_Flags.sd_valid)       LIGHT_SD;
+//    if(USBFlags.UsbConfigured)  LIGHT_USB;
+    if(USBFlags.UsbConnected)   LIGHT_USB;
+
     
+    
+    
+//    if(SD_Flags.sd_valid)       LIGHT_SD;
     // индикация заряда батареи
-    switch(PowLevel)
-    {
-      case 3: LIGHT_BAT3;
-      case 2: LIGHT_BAT2;
-      case 1: LIGHT_BAT1;
-    }
-    LIGHT_BAT0;
+//    switch(PowLevel)
+//    {
+//      case 3: LIGHT_BAT3;
+//      case 2: LIGHT_BAT2;
+//      case 1: LIGHT_BAT1;
+//    }
+//    LIGHT_BAT0;
     
     // загрузка индикатора данными
     LCD_load_data();
@@ -112,5 +116,5 @@ void  lcd_process(void)
 //    }
 //    
     // загрузка индикатора данными +
-//    Prog_LCD_load_data( );
+    Prog_LCD_load_data( );
 }

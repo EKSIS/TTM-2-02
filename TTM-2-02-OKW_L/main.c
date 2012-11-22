@@ -11,8 +11,8 @@ void main(void)
   LCD_on();
   
   
-//    for(U8  a= 0;; WDRCLR)
-      for(;;)
+    for(U8  a= 0;; WDRCLR)
+//      for(;;)
     {
       WDRCLR;
 //      a=  Flags.measure_ready || USBFlags.UsbEvent || Flags.systick || Flags.key;
@@ -23,7 +23,7 @@ void main(void)
 //      }
 //  
 //      if(Flags.key)               key_process();    
-//      if(USBFlags.UsbEvent)       usb_control(); 
+      if(USBFlags.UsbEvent)       usb_control(); 
 //      if(Flags.measure_ready)     measure_process();
 //  
       if(Flags.systick)            
