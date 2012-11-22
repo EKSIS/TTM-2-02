@@ -4,8 +4,8 @@ void Prog_LCD_load_data(void)
 {
     // индикация подключения USB и SD
 //    if(USBFlags.UsbConfigured)  LIGHT_USB;
-    if(USBFlags.UsbConnected)   LIGHT_USB;
-
+//    if(USBFlags.UsbConnected)   LIGHT_USB;
+//    else {Minutes = 0; Seconds = -1;};
     
     
     
@@ -19,6 +19,7 @@ void Prog_LCD_load_data(void)
 //    }
 //    LIGHT_BAT0;
     
+    
     // загрузка индикатора данными
     LCD_load_data();
 }
@@ -31,11 +32,13 @@ void  lcd_process(void)
 //        
       Flags.lcd_update= 0;
 //    if(Selector == OFF_MODE) return;
-    
+      
 //    if(Errors & INFOMEM_ERROR)
     {
-      printf(" 1234 5678");
-//      printf(" FAIL MEM");      
+//      printf(" %02d.%02d", Minutes, Seconds); //del 
+//      printf(" FAIL MEM");
+//      date_time();
+      if (Seconds%2) LIGHT_BAT0;
       LCD_load_data();
 //      return;
     }

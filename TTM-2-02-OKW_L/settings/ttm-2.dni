@@ -20,7 +20,7 @@ NextState1=0
 Break=0
 State Storage=0
 [DebugChecksum]
-Checksum=-1442118888
+Checksum=-1255817715
 [CallStack]
 ShowArgs=0
 [Disassembly]
@@ -84,7 +84,8 @@ LogFile=_ ""
 [Aliases]
 A0=_ "N:\Exchange\Антонов Александр\TTM-2-02-OKW_L\main.c" ""
 A1=_ "N:\Exchange\Антонов Александр\TTM-2-02-OKW_L\printf.c" ""
-Count=2
+A2=_ "N:\Exchange\Антонов Александр\TTM-2-02-OKW_L\usb_msp.c" ""
+Count=3
 SuppressDialog=1
 [CallStackLog]
 Enabled=0
