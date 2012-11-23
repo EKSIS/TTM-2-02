@@ -267,7 +267,7 @@ bg:
     
     if(Flags.systick)            
     {
-      if(!Time2Write)            statistic_process();      
+//      if(!Time2Write)            statistic_process();      
       date_time();
       CheckInfoFlash();
       tresholds_process();

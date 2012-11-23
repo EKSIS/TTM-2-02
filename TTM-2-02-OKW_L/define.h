@@ -4,7 +4,7 @@
 #include  "usb_desc.h"
 #include  "hid.h"
 #include  "usb_msp.h"
-#include  "sd.h"
+//#include  "sd.h"
 #include  "limits.h"
 #include  "math.h"
 #include  "stdio.h"

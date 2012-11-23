@@ -104,7 +104,7 @@ __interrupt void tb_isr(void)
                
     case START_MES:   ADC12CTL0 |= (ADC12REFON + ADC12ON);  // ADC12 ON
                       state      = WAITING;
-                      BAT_ON;
+                      //BAT_ON;
                       TBCCR0     = 49;
                       ADC12CTL0 |= (ADC12ENC + ADC12SC);    // Start Convertion 
                       

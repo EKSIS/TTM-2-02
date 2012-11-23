@@ -4,12 +4,10 @@ void main(void)
 {
   ini();
   
-  
+  Selector == OFF_MODE;
   POWER_OFF;
   __enable_interrupt();
-  LCD_off;
-  LCD_on();
-  
+
   
     for(U8  a= 0;; WDRCLR)
     {
@@ -17,7 +15,7 @@ void main(void)
       if(!a)    
       {
         if(USBFlags.UsbConnected) LPM0;
-        else                      LPM3;
+        else                      LPM4;
       }
   
       if(Flags.key)               key_process();    
@@ -29,14 +27,11 @@ void main(void)
         Flags.lcd_update = 1;
         Flags.systick    = 0;
         date_time();
-        
-//        if(!Time2Write)           statistic_process();            
-//        CheckInfoFlash();
-//        tresholds_process();
-//        sd_process();
+       
+        CheckInfoFlash();
+        tresholds_process();
       }
             if(Flags.lcd_update)        lcd_process();
-      
       
     } // for
     

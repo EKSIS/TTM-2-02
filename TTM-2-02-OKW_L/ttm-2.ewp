@@ -1966,6 +1966,9 @@
       </excluded>
     </file>
     <file>
+      <name>$PROJ_DIR$\global_declaration.h</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\global_var.c</name>
     </file>
     <file>
@@ -2006,21 +2009,6 @@
     </file>
     <file>
       <name>$PROJ_DIR$\printf.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\prog.c</name>
-    </file>
-    <file>
-      <name>N:\Exchange\&#x410;&#x43D;&#x442;&#x43e;&#x43D;&#x43e;&#x432; &#x410;&#x43B;&#x435;&#x43A;&#x441;&#x430;&#x43D;&#x434;&#x440;\&#x41F;&#x440;&#x43e;&#x435;&#x43A;&#x442;&#x44B; IAR\ivtm-7m8\statistic_main.c</name>
-    </file>
-  </group>
-  <group>
-    <name>sd</name>
-    <file>
-      <name>N:\Exchange\&#x410;&#x43D;&#x442;&#x43e;&#x43D;&#x43e;&#x432; &#x410;&#x43B;&#x435;&#x43A;&#x441;&#x430;&#x43D;&#x434;&#x440;\&#x41F;&#x440;&#x43e;&#x435;&#x43A;&#x442;&#x44B; IAR\ivtm-7m8\sd.c</name>
-    </file>
-    <file>
-      <name>N:\Exchange\&#x410;&#x43D;&#x442;&#x43e;&#x43D;&#x43e;&#x432; &#x410;&#x43B;&#x435;&#x43A;&#x441;&#x430;&#x43D;&#x434;&#x440;\&#x41F;&#x440;&#x43e;&#x435;&#x43A;&#x442;&#x44B; IAR\ivtm-7m8\sd_main.c</name>
     </file>
   </group>
   <group>

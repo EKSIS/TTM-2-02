@@ -98,7 +98,7 @@ __root const Int8U   StatisticArray= 0xff;         //  обозначаем начало массива
 __root const F32  PowerTreshLev[2][4][2] = 
 { 2.32, 0., 2.62, 2.28, 2.92, 2.58, 10., 2.88, 2.32, 0., 2.42, 2.28, 2.52, 2.38, 10., 2.48 };
 __root const F32  Polynoms[6]=       { -2.43880E+02, 2.30354E+02, 1.57958E+01, -3.05764E+00, 7.82640E-01, -5.02791E-02 };
-__root const U8   ID[]=              "ИBTМ-7М8";
+__root const U8   ID[]=              "TTМ-2-02";
 __root const U8   Version[]=         "r1.00";
 __root const U8   MagicWord[]=       "STATISTIC";
 __root const U8   MonthSize[12]=     { 31,28,31,30,31,30,31,31,30,31,30,31 };

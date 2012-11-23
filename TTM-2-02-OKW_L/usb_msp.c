@@ -257,17 +257,17 @@ void usb_exchange(void)
                   break;         
                   
     // RF             
-    case 0x81:    if(bytenum > USB_RDATA_LEN)  goto fail;
-                  if(!SD_Flags.sd_initialized) goto fail;
-                  SD_CS_LOW;
-                  sd_read_block(addr, &USB_Buffer[1]);
-                  SD_CS_HIGH;
-                  if(Errors & SD_ERROR)
-                  {
-                    SD_Flags.sd_valid = SD_Flags.sd_initialized = 0;                    
-                    goto fail;
-                  }
-                  break;         
+//    case 0x81:    if(bytenum > USB_RDATA_LEN)  goto fail;
+//                  if(!SD_Flags.sd_initialized) goto fail;
+//                  SD_CS_LOW;
+//                  sd_read_block(addr, &USB_Buffer[1]);
+//                  SD_CS_HIGH;
+//                  if(Errors & SD_ERROR)
+//                  {
+//                    SD_Flags.sd_valid = SD_Flags.sd_initialized = 0;                    
+//                    goto fail;
+//                  }
+//                  break;         
                   
     // RI
     case 0x82:    if(bytenum > USB_RDATA_LEN)  goto fail;

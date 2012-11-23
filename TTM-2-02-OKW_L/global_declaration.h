@@ -25,7 +25,7 @@ void LCD_send_com             (U8 command);
 void ini                      (void);
 void lcd_process              (void); 
 void measure_process          (void);
-void statistic_process        (void);
+//void statistic_process        (void);
 void tresholds_process        (void);
 void sd_process               (void);
 void key_process              (void);
