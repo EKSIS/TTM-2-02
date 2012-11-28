@@ -63,6 +63,10 @@ Mode=0
 Graph=0
 Symbiont=0
 Exclusions=
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
 [Breakpoints]
 Bp0=_ "STD_CODE" "{$PROJ_DIR$}.250.4" 0 0 0 0 "" 0 ""
 Count=1
@@ -86,10 +90,6 @@ SP=0
 SR=0
 all registers=0
 File name=
-[Log file]
-LoggingEnabled=_ 0
-LogFile=_ ""
-Category=_ 0
 [Aliases]
 A0=_ "N:\Exchange\Антонов Александр\TTM-2-02-OKW_L\main.c" ""
 A1=_ "N:\Exchange\Антонов Александр\TTM-2-02-OKW_L\printf.c" ""

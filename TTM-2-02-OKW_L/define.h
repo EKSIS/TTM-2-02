@@ -101,13 +101,13 @@ typedef struct
 
 // error bits
 #define SD_ERROR              BIT0
-#define TS_ERROR              BIT1
-#define HS_ERROR              BIT2
+#define TR_ERROR              BIT1
+#define VR_ERROR              BIT2
 #define PW_ERROR              BIT3
 #define T1_ERROR              BIT4
 #define T2_ERROR              BIT5
-#define H1_ERROR              BIT6
-#define H2_ERROR              BIT7
+#define V1_ERROR              BIT6
+#define V2_ERROR              BIT7
 #define STAT_OVR              BIT8
 #define PRESS_ERROR           BIT9
 #define INFOMEM_ERROR         BITA
@@ -123,9 +123,7 @@ typedef struct
 // lcd modes
 #define OFF_MODE              0
 #define START_MODE            1
-#define TH_SHOW               2
-#define PH_SHOW               3
-#define SD_SHOW               4
+#define TV_SHOW               2
 
 // measure modes
 #define WAITING               0

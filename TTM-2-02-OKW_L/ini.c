@@ -85,6 +85,7 @@ void  ini(void)
   UCSCTL1=      DCORSEL_1;                                        // 0.5...3.5 MHz
   UCSCTL2=      63;                                               // 32,768*(63+1) ~ 2MHz на выходе FLL
   UCSCTL3=      FLLREFDIV_0 + SELREF__XT1CLK;                     // 32kHz на вход FLL
+  UCSCTL4=      SELM__DCOCLKDIV + SELS__DCOCLKDIV + SELA__XT1CLK; // MCLK - FLL(2MHz), SMCLK - FLL(2MHz), ACLK - XT1/32(1024Hz)
 
   UCSCTL5=      DIVA__32;                                         // ACLK = XT1/32 = 1024 Hz
   UCSCTL8=      0;                                                // запретить тактирование по требованию
@@ -93,8 +94,7 @@ void  ini(void)
   while(UCSCTL7 & DCOFFG) UCSCTL7 &= ~DCOFFG; 
   SFRIFG1 &= ~OFIFG; 
   
-  UCSCTL4=    SELM__DCOCLKDIV + SELS__DCOCLKDIV + SELA__XT1CLK;    // MCLK - FLL(2MHz), SMCLK - FLL(2MHz), ACLK - XT1/32(1024Hz)
-
+  
   // TA0
   TA1CTL=     TASSEL_1 + MC__UP + TACLR;//ACLK, Up mode
   TA1CCTL1=   OUTMOD_0 + OUT;  // The output signal OUTn is defined by the OUT bit. The OUTn signal updates immediately when OUT is updated.
@@ -157,9 +157,10 @@ void  ini(void)
   ADC12IE    = BITF;
   
   // Инициализация переменных из сегмента RAM  
-  Tempr = Humidy=  25;
+  velocity= 0;
+  tempr=    25;
   Power =   3.0;
-  Res= PressureParam = HumidyParam = Errors= 0.;
+  Res=  Errors= 0.;
   
   if(WriteAdr > 0x243E0) WriteAdr = 0;
   if((Seconds > 59) || (Minutes > 59) || (Houres > 23)  || (Days > 31) || (Monthes > 12) || (Years < 12) || (Years > 99) )

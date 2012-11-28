@@ -56,61 +56,61 @@ void  lcd_process(void)
         
     switch(Selector)
     {
-    case  TH_SHOW: switch(Errors & (TS_ERROR + HS_ERROR))
+    case  TV_SHOW: switch(Errors & (TR_ERROR + VR_ERROR))
                    {
-                    case TS_ERROR:            printf(" Err %#6.*f", p, w);    break;
-                    case HS_ERROR:            printf("%#6.1f Err ", Tempr);   break;
-                    case (TS_ERROR+HS_ERROR): printf(" Err  Err ");           break;
+                    case TR_ERROR:            printf(" Err %#6.*f", velocity);    break;
+                    case VR_ERROR:            printf("%#6.1f Err ", temperature);   break;
+                    case (TR_ERROR+VR_ERROR): printf(" Err  Err ");           break;
                     
-                    default:                  printf("%#6.1f%#6.*f", Tempr, p, w);
+                    default:                  printf("%#6.1f%#6.*f", temperature, velocity);
                    }
                    LIGHT_oC_UP;
                    
                    // пороги по температуре
                    if(Errors & T1_ERROR) LIGHT_HP_UP;
                    if(Errors & T2_ERROR) LIGHT_BP_UP;                   
-                   goto sel_w_seg;
+//                   goto sel_w_seg;
             
-    case  PH_SHOW: d = Pressure;
-                   if(Flags.PressGPa) d *= 1.3332;  // в гПа
-      
-                   switch(Errors & (PRESS_ERROR + HS_ERROR))
-                   { 
-                    case  HS_ERROR:                 printf("%#6.1f Err ", d);     break;
-                    case  PRESS_ERROR:              printf(" Err %#6.*f", p, w);  break;
-                    case (PRESS_ERROR + HS_ERROR):  printf(" Err  Err ");         break;
-                        
-                    default:                        printf("%#6.1f%#6.*f", d, p, w);
-                   } 
-                   
-                   if(Flags.PressGPa) LIGHT_gPa;
-                   else               LIGHT_mmptst;
-sel_w_seg:                   
-                   switch(HumidyUnits)
-                   {
-                    case H1_MODE: LIGHT_pr;              break;
-                    case H2_MODE: LIGHT_oC_LO; LIGHT_tr; break;
-                    case H3_MODE: LIGHT_oC_LO; LIGHT_m;  break;
-                    case H4_MODE: LIGHT_gm3;             break;
-                    case H5_MODE: LIGHT_ppm;             break;
-                   }
-                   
-                   // пороги по влажности
-                   if(Errors & H1_ERROR) LIGHT_HP_LO;
-                   if(Errors & H2_ERROR) LIGHT_BP_LO;
-                   break;
-                   
-    case  SD_SHOW:                    
-                   break;
+//    case  PH_SHOW: d = Pressure;
+//                   if(Flags.PressGPa) d *= 1.3332;  // в гПа
+//      
+//                   switch(Errors & (PRESS_ERROR + HS_ERROR))
+//                   { 
+//                    case  HS_ERROR:                 printf("%#6.1f Err ", d);     break;
+//                    case  PRESS_ERROR:              printf(" Err %#6.*f", p, w);  break;
+//                    case (PRESS_ERROR + HS_ERROR):  printf(" Err  Err ");         break;
+//                        
+//                    default:                        printf("%#6.1f%#6.*f", d, p, w);
+//                   } 
+//                   
+//                   if(Flags.PressGPa) LIGHT_gPa;
+//                   else               LIGHT_mmptst;
+//sel_w_seg:                   
+//                   switch(HumidyUnits)
+//                   {
+//                    case H1_MODE: LIGHT_pr;              break;
+//                    case H2_MODE: LIGHT_oC_LO; LIGHT_tr; break;
+//                    case H3_MODE: LIGHT_oC_LO; LIGHT_m;  break;
+//                    case H4_MODE: LIGHT_gm3;             break;
+//                    case H5_MODE: LIGHT_ppm;             break;
+//                   }
+//                   
+                   // пороги по скорости
+                   if(Errors & V1_ERROR) LIGHT_HP_LO;
+                   if(Errors & V2_ERROR) LIGHT_BP_LO;
+//                   break;
+//                   
+//    case  SD_SHOW:                    
+//                   break;
                                      
     case  START_MODE:                   
                    printf(" %s P%3d", Version, PowerShow); LIGHT_pr;
                    if(GenClock1 < 3) Flags.measureEn = 1;
                    if(GenClock1)     break;
-                   Selector = TH_SHOW;
+                   Selector = TV_SHOW;
                    break;
                     
-    default:       Selector= TH_SHOW;                  
+    default:       Selector= TV_SHOW;                  
     }
     
     // загрузка индикатора данными +
